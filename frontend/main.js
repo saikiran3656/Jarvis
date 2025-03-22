@@ -29,15 +29,22 @@ $(document).ready(function () {
         loop: true,
         sync: true,
         in:{
-            effect:"fadeIn",
-            sequence: true
+            effect:"fadeInUp",
+            sync: true
 
         },
         out:{
-            effect:"fadeOut",
-            sequence: true
+            effect:"fadeOutUp",
+            sync: true
 
         }
     })
 
+    // mic button click event
+    $("#MicBtn").click(function () { 
+        eel.ClickSound();        
+        $("#Ovel").attr("hidden", true);
+        $("#SiriWave").attr("hidden", false);
+        
+    });
 });
