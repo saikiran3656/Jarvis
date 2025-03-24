@@ -3,6 +3,7 @@ import os
 import eel
 
 from backend.features import *
+from backend.comman import *
 
 eel.init("frontend")
 
